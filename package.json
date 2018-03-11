@@ -1,0 +1,55 @@
+{
+  "name": "ElekenTest",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "linters": {
+      "app/**/*.js": [
+        "eslint"
+      ]
+    }
+  },
+  "dependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-import-resolver-node": "^0.3.2",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "free-google-image-search": "^1.0.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.0",
+    "react": "^16.3.0-alpha.1",
+    "react-native": "0.54.0",
+    "react-native-dropdownalert": "^3.4.0",
+    "react-native-google-image-search": "^0.1.0",
+    "react-native-grid-component": "^1.0.8",
+    "react-native-image-progress": "^1.1.0",
+    "react-native-progress": "^3.4.0",
+    "react-native-slider": "^0.11.0",
+    "react-native-vector-icons": "^4.5.0",
+    "react-navigation": "^1.5.1",
+    "react-navigation-redux-helpers": "^1.0.3",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "reselect": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-jest": "22.4.1",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "22.4.2",
+    "react-test-renderer": "^16.3.0-alpha.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
