@@ -36,12 +36,26 @@ export default StyleSheet.create({
     flex: 1,
     paddingHorizontal: 10
   },
-  imageItem: {
+  imageMidItem: {
     flex: 1,
     height: 125,
     margin: 5,
     borderWidth: 1,
     borderColor: styleColor.silver
+  },
+  imageBigItem: {
+    flex: 1,
+    margin: 5,
+    borderWidth: 1,
+    borderColor: styleColor.silver,
+    height: 185
+  },
+  imageSmallItem: {
+    flex: 1,
+    margin: 5,
+    borderWidth: 1,
+    borderColor: styleColor.silver,
+    height: 80
   },
   img: {
     flex: 1

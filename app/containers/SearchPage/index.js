@@ -45,7 +45,6 @@ class SearchPage extends PureComponent {
     const { searchValue, columnsCount } = this.state;
     if (searchValue.length >= 3) {
       Keyboard.dismiss();
-      this.setState({ searchValue: '' });
       await dispatchInitGallery(searchValue, columnsCount);
       dispatchNavigateTo('GalleryPage');
     } else {

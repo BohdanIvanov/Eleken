@@ -42,11 +42,18 @@ class GalleryPage extends PureComponent {
       });
   }
 
-  renderImageItem = (data, i) => (
-    <View style={s.imageItem} key={i}>
-      <Image indicatorProps={{ color: styleColor.primary }} source={{ uri: data }} style={s.img} />
-    </View>
-  );
+  renderImageItem = (data, i) => {
+    const { columns } = this.props;
+    return (
+      <View
+        style={[columns === 1 && s.imageBigItem, columns >= 2 && s.imageMidItem, columns >= 4 && s.imageSmallItem]}
+        key={i}
+      >
+        <Image indicatorProps={{ color: styleColor.primary }} source={{ uri: data }} style={s.img} />
+      </View>
+    );
+  };
+
   render() {
     const { columns } = this.props;
     const { images, isFetched } = this.state;
